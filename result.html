@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>result</title>
+    <!-- BootStrap English -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <!-- Bootstrap RTL -->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
+        integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/result.css">
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-circle">
+        <img class="img-fluid w-100" src="./images/top-circle.png" alt="eclipse">
+    </div>
+    <nav class="navbar justify-content-between">
+        <div style="width: 100px;">
+            <img class="img-fluid w-100" src="./images/logo.png" alt="">
+        </div>
+        <!-- <img class="" src="./452766-PFPPU4-415.svg" alt=""> -->
+        <div class="d-flex mb-3">
+            <button class="btn nav-item primary-text">الرئيسية</button>
+            <button class="btn nav-item primary-text">إعرفنا</button>
+            <button class="btn nav-item primary-text">دكتور؟ إنضم إلينا</button>
+        </div>
+        <div class="d-flex login-container">
+            <button class="btn px-0"><img class="w-50" src="./images/egypt.png" alt=""></button>
+            <button class="btn login-btn px-4 border-25">تسجيل الدخول</button>
+        </div>
+    </nav>
+    <nav class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center py-4">
+            <select class="filter-select form-control grey-text px-4 py-2 mx-2" style="background-color: #EFEEEE;" aria-placeholder="اختار">
+                <option value="" disabled selected>التخصص</option>
+                <option>عيون</option>
+                <option>جلدية</option>
+            </select>
+            <select class="filter-select form-control grey-text px-4 py-2 mx-2" style="background-color: #EFEEEE;" aria-placeholder="اختار">
+                <option value="" disabled selected>المحافظة</option>
+                <option>القاهرة</option>
+                <option>الاسكندرية</option>
+            </select>
+            <select class="filter-select form-control grey-text px-4 py-2 mx-2" style="background-color: #EFEEEE;" aria-placeholder="اختار">
+                <option value="" disabled selected>المنطقة</option>
+                <option>القاهرة</option>
+                <option>الاسكندرية</option>
+            </select>
+            <!-- <button class="btn text-light primary-bg px-5 py-2 mx-2">أبحث</button> -->
+        </div>
+    </nav>
+    <section class="d-flex" style="background-color:#F5F6FA;">
+        <form class="primary-bg text-light sidebar">
+            <div class="search w-100 grey-text">
+                <div class="search-container">
+                    <div class="form-group w-100">
+                        <button type="submit" class="btn search-icon faded">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <input type="email" class="form-control"
+                            placeholder="بحث باسم الدكتور">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center category">
+                <h3 class="d-inline-block border-bottom mt-4">الجلدية</h3>
+            </div>
+            <div class="filters">
+                <div class="filter-section">
+                    <h5 class="mb-3">المواعيد المتاحة</h5>
+                    <div class="checkbox-item">
+                        <label class="checkboxContainer">
+                            <p class="font-tajawal-medium">
+                                صباحًا
+                            </p>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="checkbox-item">
+                        <label class="checkboxContainer">
+                            <p class="font-tajawal-medium">
+                                مساءً
+                            </p>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <h5 class="mb-3">النوع</h5>
+                    <div class="checkbox-item">
+                        <label class="checkboxContainer">
+                            <p class="font-tajawal-medium">
+                                دكتور
+                            </p>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="checkbox-item">
+                        <label class="checkboxContainer">
+                            <p class="font-tajawal-medium">
+                                دكتورة
+                            </p>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-section" style="border-bottom: none;">
+                    <h5 class="mb-3">سعر الكشف</h5>
+                    <div class="checkbox-item">
+                        <label class="checkboxContainer">
+                            <p class="font-tajawal-medium">
+                                الكل
+                            </p>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="checkbox-item">
+                        <label class="checkboxContainer">
+                            <p class="font-tajawal-medium">
+                                أقل من 50 جنيه
+                            </p>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="checkbox-item">
+                        <label class="checkboxContainer">
+                            <p class="font-tajawal-medium">
+                                أقل من 50 جنيه
+                            </p>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="checkbox-item">
+                        <label class="checkboxContainer">
+                            <p class="font-tajawal-medium">
+                                أقل من 200 جنيه
+                            </p>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="checkbox-item">
+                        <label class="checkboxContainer">
+                            <p class="font-tajawal-medium">
+                                أقل من 400 جنيه
+                            </p>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- <div class="row" style="margin-right: 100px;">
+            <div class="col-lg-6">
+                <div class="result-item">
+                    <div class="pic">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/doctor-result.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2 class="primary-text">د.جمال الدين محمد فتحي</h2>
+                        <div class="d-flex">
+                            <div class="mr-2">
+                                <img src="./images/icon-det.png" alt="">
+                            </div>
+                            <p>استشاري الحساسية والمناعة رئيس قسم الحساسية والمناعة بهيئة المصل واللقاح يتوفر
+                                اختبارات الحساسية وفحوصات المناعة والعلاج بالأمصال </p>
+                        </div>
+                        <div class="d-flex mb-5">
+                            <div class="mr-2">
+                                <img src="./images/icon-location.png" alt="">
+                            </div>
+                            <p>مصر الجديدة 12 شارع بطرس غالي الدور الرابع روكسي</p>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="mr-2">
+                                <img src="./images/Icon-phone.png" alt="">
+                            </div>
+                            <p>01142400557 / 016446521</p>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <div class="d-flex flex-column justify-content-center ">
+                                <div class="mb-1">
+                                    <img class="d-block mx-auto my-2" src="./images/icon-money.png" alt="">
+                                </div>
+                                <h8 class="text-center mb-2">سعر الكشف</h8>
+                                <h7 class="text-center primary-text">200 جنيه</h7>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center ">
+                                <div class="mb-1">
+                                    <img class="d-block mx-auto" src="./images/Icon feather-clock.png" alt="">
+                                </div>
+                                <h8 class="text-center mb-2">سعر الكشف</h8>
+                                <h7 class="text-center primary-text">200 جنيه</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <div class="mb-1">
+                            <img class="d-block mx-auto" src="./images/rating-star.png" alt="">
+                        </div>
+                        <p class="text-center">4.5</p>
+                    </div>
+                    <div class="available m-auto bg-dark text-light py-1 px-2 border-5 clearfix">
+                        <p class="float-left mb-0">متاح من السبت للخميس</p>
+                        <p class="float-right mb-0 pl-5">10:00-05:00م</p>
+                    </div>
+                    <div class="mx-auto">
+                        <button class="btn primary-bg text-light book px-5">احجز</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    <footer class="primary-bg py-5">
+        <div class="row">
+            <div class="col-3 my-auto">
+                <div class="logo-circle rounded-circle mx-auto">
+                    <img class="w-100" src="./images/logo.png" alt="logo">
+                </div>
+            </div>
+            <div class="col-2">
+                <h3 class="text-light mb-4">روابط الموقع</h3>
+                <div class="d-flex flex-column text-grey">
+                    <a class="footer-link mb-4" href="">التخصصات</a>
+                    <a class="footer-link mb-4" href="">سياسة الإستخدام</a>
+                    <a class="footer-link mb-4" href="">اسم الدكتور</a>
+                    <a class="footer-link mb-4" href="">إنضم إلينا</a>
+                </div>
+            </div>
+            <div class="col-2">
+                <h3 class="text-light mb-4">روابط الموقع</h3>
+                <div class="d-flex flex-column text-grey">
+                    <a class="footer-link mb-4" href="">التخصصات</a>
+                    <a class="footer-link mb-4" href="">سياسة الإستخدام</a>
+                    <a class="footer-link mb-4" href="">اسم الدكتور</a>
+                    <a class="footer-link mb-4" href="">إنضم إلينا</a>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="d-flex flex-column align-items-center justify-content-center h-100 px-5">
+                    <h3 class="text-light text-center mb-5 ">معانا تقدر تحجز وتقارن بين كثير من أفضل الدكاترة خلالنا
+                    </h3>
+                    <div class="text-center">
+                        <a href="" class="rectangle-link mx-3">
+                            <img src="./images/google-footer.png" alt="">
+                        </a>
+                        <a href="" class="rectangle-link mx-3">
+                            <img src="./images/twitter-footer.png" alt="">
+                        </a>
+                        <a href="" class="rectangle-link mx-3">
+                            <img src="./images/facebook-footer.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

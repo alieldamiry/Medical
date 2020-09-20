@@ -1,0 +1,103 @@
+@import "global.scss";
+
+.header {
+    /* Location of the image */
+    background-image: url("../images/home-header.png");
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+    /* Background image is fixed in the viewport so that it doesn't move when 
+      the content's height is greater than the image's height */
+    // background-attachment: fixed;
+    /* This is what makes the background image rescale based
+      on the container's size */
+    background-size: cover;
+    /* Set a background color that will be displayed
+      while the background image is loading */
+    position: relative;
+}
+
+.nav-item {
+    font-size: 20px;
+    padding: 1rem 2rem;
+}
+@media (max-width: 669px) {
+    .nav-item {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+}
+.top-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 522px;
+}
+.login-btn {
+    color: #3f72af;
+    background-color: #fff;
+}
+@media (max-width: 1160px) {
+    .top-circle {
+        display: none;
+    }
+    .login-container {
+        margin: 1rem auto;
+    }
+    .login-btn {
+        color: #ffff;
+        background-color: #3f72af;
+    }
+}
+.bottom-circle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+}
+
+.header-form {
+    display: block;
+    position: relative;
+    z-index: 1;
+    border-radius: 34px;
+    backdrop-filter: blur(33px);
+    background-color: #fff;
+    opacity: 1;
+    padding: 54px 82px;
+}
+@media (max-width: 752px) {
+    .header-form {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-bottom: 10px !important;
+        padding: 54px 33px;
+    }
+}
+.form-icons {
+    position: absolute;
+    left: 40px;
+    z-index: 2;
+}
+
+// features
+.features-row {
+    max-width: 71%;
+    // padding: 0 50px;
+}
+
+.king-img {
+    position: absolute;
+    bottom: 0;
+    left: 63px;
+    height: 106%;
+}
+@media (max-width: 992px) {
+    .features-row {
+        max-width: 100%;
+    }
+    .king-img {
+        display: none;
+    }
+}

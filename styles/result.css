@@ -1,0 +1,273 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none !important;
+  color: unset;
+}
+
+body {
+  font-family: tajawal-bold;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@font-face {
+  font-family: tajawal-bold;
+  src: url("../fonts/Tajawal-Bold.ttf");
+}
+
+.font-tajawal-bold {
+  font-family: tajawal-bold;
+}
+
+@font-face {
+  font-family: tajawal-medium;
+  src: url("../fonts/Tajawal-Medium.ttf");
+}
+
+.font-tajawal-medium {
+  font-family: tajawal-medium;
+}
+
+.faded {
+  opacity: 0.5;
+}
+
+.primary-bg {
+  background-color: #3f72af !important;
+}
+
+.grey-bg {
+  background-color: #f7f5f5 !important;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.primary-text {
+  color: #3f72af !important;
+}
+
+.grey-text {
+  color: #726767 !important;
+}
+
+.black-text {
+  color: #000 !important;
+}
+
+.border-25 {
+  border-radius: 25px;
+}
+
+.border-20 {
+  border-radius: 20px;
+}
+
+.border-5 {
+  border-radius: 5px;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 5px #00000029;
+          box-shadow: 0px 0px 5px #00000029;
+}
+
+.h-55 {
+  height: 55px;
+}
+
+.footer-link {
+  font-family: tajawal-medium;
+  font-size: 27px;
+  color: #d0d0d0;
+}
+
+.logo-circle {
+  display: block;
+  padding: 26px 10px;
+  background-color: #fff;
+  width: 122px;
+}
+
+.rectangle-link {
+  display: inline-block;
+  width: 58px;
+  height: 43px;
+  background-color: #fff;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.rectangle-link img {
+  position: relative;
+  top: calc(50% - 13px);
+}
+
+.top-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 322px;
+}
+
+.result-item {
+  background-color: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 10px;
+  grid-gap: 10px;
+  border-radius: 10px;
+}
+
+@media (min-width: 994px) {
+  .result-item {
+        grid-template-areas: "pic content content rating" "pic content content rating" "pic available available book";
+  }
+  .pic {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    grid-area: pic;
+  }
+  .content {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: content;
+  }
+  .rating {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+    grid-area: rating;
+  }
+  .available {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: available;
+  }
+  .book {
+    -ms-grid-row: 3;
+    -ms-grid-column: 4;
+    grid-area: book;
+  }
+}
+
+.filter-select {
+  height: unset !important;
+  background-color: #EFEEEE;
+  border-radius: 7px;
+  border: none;
+}
+
+.filter-select:focus {
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+@media (max-width: 468px) {
+  .filter-select {
+    font-size: 0.75rem;
+  }
+}
+
+.sidebar {
+  width: 350px;
+}
+
+.search {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 0 0 25px 25px;
+}
+
+.search-container {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  text-align: center;
+}
+
+.search-container input {
+  padding: 0 4px;
+  position: absolute;
+  bottom: 30px;
+  border: none;
+  width: 93%;
+  margin-right: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0;
+}
+
+.search-container input:focus {
+  background-color: #fff;
+  border-color: #ccc;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.filter-section {
+  padding: 40px 20px 20px;
+  font-family: tajawal-medium;
+  border-bottom: 1px solid #ccc;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  bottom: 30px;
+  z-index: 1;
+}
+
+.checkboxContainer input {
+  display: none;
+}
+
+.checkboxContainer {
+  padding-right: 30px;
+  position: relative;
+  cursor: pointer;
+  font-family: sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.checkboxContainer .checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  position: absolute;
+  top: 2.5px;
+  right: 0;
+  border-radius: 4px;
+}
+
+.checkboxContainer input:checked + .checkmark:after {
+  content: "";
+  position: absolute;
+  height: 102%;
+  width: 102%;
+  background-size: cover;
+  background-color: #fff;
+}
+/*# sourceMappingURL=result.css.map */

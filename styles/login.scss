@@ -1,0 +1,83 @@
+@import "global.scss";
+
+html {
+    // height: 100%;
+}
+body {
+    /* Location of the image */
+    background-image: url("../images/login-background.jpg");
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+    /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+    background-attachment: fixed;
+    /* This is what makes the background image rescale based
+     on the container's size */
+    background-size: cover;
+    /* Set a background color that will be displayed
+     while the background image is loading */
+    //   background-color: #464646;
+    
+    padding: 23px;
+    display: flex;
+    align-items: center;
+    font-family: tajawal-bold;
+}
+
+.login-box {
+    top: 23px;
+    left: 701px;
+    width: 640px;
+    border-radius: 34px;
+    opacity: 1;
+    backdrop-filter: blur(33px);
+    background-color: #fff;
+    opacity: 1;
+    padding: 54px 82px;
+}
+
+@media (max-width: 576px) {
+    .login-box {
+        padding: 54px 33px;
+    }
+}
+
+.social-icon {
+    width: 50px;
+}
+
+// Checkbox Style
+
+.checkboxContainer input {
+    display: none;
+}
+.checkboxContainer {
+    padding-left: 30px;
+    position: relative;
+    cursor: pointer;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.checkboxContainer .checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #8888;
+    position: absolute;
+    top: 2.5px;
+    left: 5px;
+    border-radius: 4px;
+}
+
+.checkboxContainer input:checked + .checkmark:after {
+    content: "";
+    position: absolute;
+    height: 102%;
+    width: 102%;
+    background-size: cover;
+    // border-left: 2px solid #8888;
+    // border-bottom: 2px solid #8888;
+    background-color: #8888;
+}

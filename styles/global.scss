@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none !important;
+    color: unset;
+}
+body{
+    font-family: tajawal-bold;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+@font-face {
+    font-family: tajawal-bold;
+    src: url("../fonts/Tajawal-Bold.ttf");
+}
+.font-tajawal-bold {
+    font-family: tajawal-bold;
+}
+@font-face {
+    font-family: tajawal-medium;
+    src: url("../fonts/Tajawal-Medium.ttf");
+}
+.font-tajawal-medium {
+    font-family: tajawal-medium;
+}
+
+// colors and text
+.faded {
+    opacity: 0.5;
+}
+.primary-bg {
+    background-color: #3f72af !important;
+}
+.grey-bg {
+    background-color: #f7f5f5 !important;
+}
+.font-size-20 {
+    font-size: 20px;
+}
+.primary-text {
+    color: #3f72af !important;
+}
+.grey-text {
+    color: #726767 !important;
+}
+.black-text {
+    color: #000 !important;
+}
+
+//borders
+.border-25 {
+    border-radius: 25px;
+}
+.border-20 {
+    border-radius: 20px;
+}
+.border-5 {
+    border-radius: 5px;
+}
+
+// box shadow
+.box-shadow {
+    box-shadow: 0px 0px 5px #00000029;
+}
+
+// Spacing
+.h-55{
+    height: 55px;
+}
+
+
+// footer
+
+.footer-link {
+    font-family: tajawal-medium;
+    font-size: 27px;
+    color: #d0d0d0;
+}
+
+.logo-circle {
+    display: block;
+    padding: 26px 10px;
+    background-color: #fff;
+    width: 122px;
+}
+.rectangle-link {
+    display: inline-block;
+    width: 58px;
+    height: 43px;
+    background-color: #fff;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.rectangle-link img {
+    position: relative;
+    top: calc(50% - 13px);
+}

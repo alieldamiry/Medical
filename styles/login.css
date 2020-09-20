@@ -1,0 +1,204 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none !important;
+  color: unset;
+}
+
+body {
+  font-family: tajawal-bold;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@font-face {
+  font-family: tajawal-bold;
+  src: url("../fonts/Tajawal-Bold.ttf");
+}
+
+.font-tajawal-bold {
+  font-family: tajawal-bold;
+}
+
+@font-face {
+  font-family: tajawal-medium;
+  src: url("../fonts/Tajawal-Medium.ttf");
+}
+
+.font-tajawal-medium {
+  font-family: tajawal-medium;
+}
+
+.faded {
+  opacity: 0.5;
+}
+
+.primary-bg {
+  background-color: #3f72af !important;
+}
+
+.grey-bg {
+  background-color: #f7f5f5 !important;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.primary-text {
+  color: #3f72af !important;
+}
+
+.grey-text {
+  color: #726767 !important;
+}
+
+.black-text {
+  color: #000 !important;
+}
+
+.border-25 {
+  border-radius: 25px;
+}
+
+.border-20 {
+  border-radius: 20px;
+}
+
+.border-5 {
+  border-radius: 5px;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 5px #00000029;
+          box-shadow: 0px 0px 5px #00000029;
+}
+
+.h-55 {
+  height: 55px;
+}
+
+.footer-link {
+  font-family: tajawal-medium;
+  font-size: 27px;
+  color: #d0d0d0;
+}
+
+.logo-circle {
+  display: block;
+  padding: 26px 10px;
+  background-color: #fff;
+  width: 122px;
+}
+
+.rectangle-link {
+  display: inline-block;
+  width: 58px;
+  height: 43px;
+  background-color: #fff;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.rectangle-link img {
+  position: relative;
+  top: calc(50% - 13px);
+}
+
+.top-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 522px;
+}
+
+body {
+  /* Location of the image */
+  background-image: url("../images/login-background.jpg");
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  padding: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: tajawal-bold;
+}
+
+.login-box {
+  top: 23px;
+  left: 701px;
+  width: 640px;
+  border-radius: 34px;
+  opacity: 1;
+  -webkit-backdrop-filter: blur(33px);
+          backdrop-filter: blur(33px);
+  background-color: #fff;
+  opacity: 1;
+  padding: 54px 82px;
+}
+
+@media (max-width: 576px) {
+  .login-box {
+    padding: 54px 33px;
+  }
+}
+
+.social-icon {
+  width: 50px;
+}
+
+.checkboxContainer input {
+  display: none;
+}
+
+.checkboxContainer {
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+  font-family: sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.checkboxContainer .checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #8888;
+  position: absolute;
+  top: 2.5px;
+  left: 5px;
+  border-radius: 4px;
+}
+
+.checkboxContainer input:checked + .checkmark:after {
+  content: "";
+  position: absolute;
+  height: 102%;
+  width: 102%;
+  background-size: cover;
+  background-color: #8888;
+}
+/*# sourceMappingURL=login.css.map */
