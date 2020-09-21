@@ -17,37 +17,44 @@
 </head>
 
 <body>
-    <div class="top-circle">
-        <img class="img-fluid w-100" src="./images/top-circle.png" alt="eclipse">
+    <div class="modal">
+
     </div>
-    <nav class="navbar justify-content-between">
-        <div style="width: 100px;">
-            <img class="img-fluid w-100" src="./images/logo.png" alt="">
-        </div>
-        <!-- <img class="" src="./452766-PFPPU4-415.svg" alt=""> -->
-        <div class="d-flex mb-3">
-            <button class="btn nav-item primary-text">الرئيسية</button>
-            <button class="btn nav-item primary-text">إعرفنا</button>
-            <button class="btn nav-item primary-text">دكتور؟ إنضم إلينا</button>
-        </div>
-        <div class="d-flex login-container">
-            <button class="btn px-0"><img class="w-50" src="./images/egypt.png" alt=""></button>
-            <button class="btn login-btn px-4 border-25">تسجيل الدخول</button>
-        </div>
-    </nav>
+    <div class="top-circle-2">
+        <img class="img-fluid w-100" src="./images/top-circle-2.png" alt="eclipse">
+    </div>
+    <div class="nav-container nav-shadow">
+        <nav class="navbar justify-content-between">
+            <div style="width: 100px;">
+                <img class="img-fluid w-100" src="./images/logo.png" alt="">
+            </div>
+            <div class="d-flex mb-3">
+                <button class="btn nav-item primary-text">الرئيسية</button>
+                <button class="btn nav-item primary-text">إعرفنا</button>
+                <button class="btn nav-item primary-text">دكتور؟ إنضم إلينا</button>
+            </div>
+            <div class="d-flex login-container">
+                <button class="btn language px-0"><img class="w-50" src="./images/egypt.png" alt=""></button>
+                <button class="btn login-btn-primary px-4 border-25">تسجيل الدخول</button>
+            </div>
+        </nav>
+    </div>
     <nav class="d-flex justify-content-center">
         <div class="d-flex justify-content-center py-4">
-            <select class="filter-select form-control grey-text px-4 py-2 mx-2" style="background-color: #EFEEEE;" aria-placeholder="اختار">
+            <select class="filter-select form-control grey-text px-4 py-2 mx-2" style="background-color: #EFEEEE;"
+                aria-placeholder="اختار">
                 <option value="" disabled selected>التخصص</option>
                 <option>عيون</option>
                 <option>جلدية</option>
             </select>
-            <select class="filter-select form-control grey-text px-4 py-2 mx-2" style="background-color: #EFEEEE;" aria-placeholder="اختار">
+            <select class="filter-select form-control grey-text px-4 py-2 mx-2" style="background-color: #EFEEEE;"
+                aria-placeholder="اختار">
                 <option value="" disabled selected>المحافظة</option>
                 <option>القاهرة</option>
                 <option>الاسكندرية</option>
             </select>
-            <select class="filter-select form-control grey-text px-4 py-2 mx-2" style="background-color: #EFEEEE;" aria-placeholder="اختار">
+            <select class="filter-select form-control grey-text px-4 py-2 mx-2" style="background-color: #EFEEEE;"
+                aria-placeholder="اختار">
                 <option value="" disabled selected>المنطقة</option>
                 <option>القاهرة</option>
                 <option>الاسكندرية</option>
@@ -55,117 +62,129 @@
             <!-- <button class="btn text-light primary-bg px-5 py-2 mx-2">أبحث</button> -->
         </div>
     </nav>
-    <section class="d-flex" style="background-color:#F5F6FA;">
-        <form class="primary-bg text-light sidebar">
-            <div class="search w-100 grey-text">
-                <div class="search-container">
-                    <div class="form-group w-100">
-                        <button type="submit" class="btn search-icon faded">
-                            <i class="fas fa-search"></i>
-                        </button>
-                        <input type="email" class="form-control"
-                            placeholder="بحث باسم الدكتور">
+    <main class="d-flex" style="background-color:#F5F6FA;">
+        <nav class="position-relative">
+            <span class="sidebar-btn position-absolute" style="z-index: 100; top: 5px; right: 0;">
+                <a href="#" onclick="toggleSideBar(event)">
+                    <svg width="40" height="40">
+                        <path d="M0,5 30,5" stroke="#3F72AF" stroke-width="5" />
+                        <path d="M0,14 30,14" stroke="#3F72AF" stroke-width="5" />
+                        <path d="M0,23 30,23" stroke="#3F72AF" stroke-width="5" />
+                    </svg>
+                </a>
+            </span>
+            <div id="sidebar" class="sidebar">
+                <form class="primary-bg text-light">
+                    <div class="search w-100 grey-text">
+                        <div class="search-container">
+                            <div class="form-group w-100">
+                                <button type="submit" class="btn search-icon faded">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                                <input type="text" class="form-control" placeholder="بحث باسم الدكتور">
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div class="text-center category">
+                        <h3 class="d-inline-block border-bottom mt-4">الجلدية</h3>
+                    </div>
+                    <div class="filters">
+                        <div class="filter-section">
+                            <h5 class="mb-3">المواعيد المتاحة</h5>
+                            <div class="checkbox-item">
+                                <label class="checkboxContainer">
+                                    <p class="font-tajawal-medium">
+                                        صباحًا
+                                    </p>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="checkbox-item">
+                                <label class="checkboxContainer">
+                                    <p class="font-tajawal-medium">
+                                        مساءً
+                                    </p>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-section">
+                            <h5 class="mb-3">النوع</h5>
+                            <div class="checkbox-item">
+                                <label class="checkboxContainer">
+                                    <p class="font-tajawal-medium">
+                                        دكتور
+                                    </p>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="checkbox-item">
+                                <label class="checkboxContainer">
+                                    <p class="font-tajawal-medium">
+                                        دكتورة
+                                    </p>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-section" style="border-bottom: none;">
+                            <h5 class="mb-3">سعر الكشف</h5>
+                            <div class="checkbox-item">
+                                <label class="checkboxContainer">
+                                    <p class="font-tajawal-medium">
+                                        الكل
+                                    </p>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="checkbox-item">
+                                <label class="checkboxContainer">
+                                    <p class="font-tajawal-medium">
+                                        أقل من 50 جنيه
+                                    </p>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="checkbox-item">
+                                <label class="checkboxContainer">
+                                    <p class="font-tajawal-medium">
+                                        أقل من 50 جنيه
+                                    </p>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="checkbox-item">
+                                <label class="checkboxContainer">
+                                    <p class="font-tajawal-medium">
+                                        أقل من 200 جنيه
+                                    </p>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="checkbox-item">
+                                <label class="checkboxContainer">
+                                    <p class="font-tajawal-medium">
+                                        أقل من 400 جنيه
+                                    </p>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="text-center category">
-                <h3 class="d-inline-block border-bottom mt-4">الجلدية</h3>
-            </div>
-            <div class="filters">
-                <div class="filter-section">
-                    <h5 class="mb-3">المواعيد المتاحة</h5>
-                    <div class="checkbox-item">
-                        <label class="checkboxContainer">
-                            <p class="font-tajawal-medium">
-                                صباحًا
-                            </p>
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="checkbox-item">
-                        <label class="checkboxContainer">
-                            <p class="font-tajawal-medium">
-                                مساءً
-                            </p>
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                </div>
-                <div class="filter-section">
-                    <h5 class="mb-3">النوع</h5>
-                    <div class="checkbox-item">
-                        <label class="checkboxContainer">
-                            <p class="font-tajawal-medium">
-                                دكتور
-                            </p>
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="checkbox-item">
-                        <label class="checkboxContainer">
-                            <p class="font-tajawal-medium">
-                                دكتورة
-                            </p>
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                </div>
-                <div class="filter-section" style="border-bottom: none;">
-                    <h5 class="mb-3">سعر الكشف</h5>
-                    <div class="checkbox-item">
-                        <label class="checkboxContainer">
-                            <p class="font-tajawal-medium">
-                                الكل
-                            </p>
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="checkbox-item">
-                        <label class="checkboxContainer">
-                            <p class="font-tajawal-medium">
-                                أقل من 50 جنيه
-                            </p>
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="checkbox-item">
-                        <label class="checkboxContainer">
-                            <p class="font-tajawal-medium">
-                                أقل من 50 جنيه
-                            </p>
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="checkbox-item">
-                        <label class="checkboxContainer">
-                            <p class="font-tajawal-medium">
-                                أقل من 200 جنيه
-                            </p>
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="checkbox-item">
-                        <label class="checkboxContainer">
-                            <p class="font-tajawal-medium">
-                                أقل من 400 جنيه
-                            </p>
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </form>
-        <!-- <div class="row" style="margin-right: 100px;">
-            <div class="col-lg-6">
+        </nav>
+        <div class="row px-md-5">
+            <div class="col-12 my-5">
                 <div class="result-item">
                     <div class="pic">
                         <div class="d-flex justify-content-center">
@@ -225,8 +244,248 @@
                     </div>
                 </div>
             </div>
-        </div> -->
-    </section>
+            <div class="col-12 my-5">
+                <div class="result-item">
+                    <div class="pic">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/doctor-result.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2 class="primary-text">د.جمال الدين محمد فتحي</h2>
+                        <div class="d-flex">
+                            <div class="mr-2">
+                                <img src="./images/icon-det.png" alt="">
+                            </div>
+                            <p>استشاري الحساسية والمناعة رئيس قسم الحساسية والمناعة بهيئة المصل واللقاح يتوفر
+                                اختبارات الحساسية وفحوصات المناعة والعلاج بالأمصال </p>
+                        </div>
+                        <div class="d-flex mb-5">
+                            <div class="mr-2">
+                                <img src="./images/icon-location.png" alt="">
+                            </div>
+                            <p>مصر الجديدة 12 شارع بطرس غالي الدور الرابع روكسي</p>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="mr-2">
+                                <img src="./images/Icon-phone.png" alt="">
+                            </div>
+                            <p>01142400557 / 016446521</p>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <div class="d-flex flex-column justify-content-center ">
+                                <div class="mb-1">
+                                    <img class="d-block mx-auto my-2" src="./images/icon-money.png" alt="">
+                                </div>
+                                <h8 class="text-center mb-2">سعر الكشف</h8>
+                                <h7 class="text-center primary-text">200 جنيه</h7>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center ">
+                                <div class="mb-1">
+                                    <img class="d-block mx-auto" src="./images/Icon feather-clock.png" alt="">
+                                </div>
+                                <h8 class="text-center mb-2">سعر الكشف</h8>
+                                <h7 class="text-center primary-text">200 جنيه</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <div class="mb-1">
+                            <img class="d-block mx-auto" src="./images/rating-star.png" alt="">
+                        </div>
+                        <p class="text-center">4.5</p>
+                    </div>
+                    <div class="available m-auto bg-dark text-light py-1 px-2 border-5 clearfix">
+                        <p class="float-left mb-0">متاح من السبت للخميس</p>
+                        <p class="float-right mb-0 pl-5">10:00-05:00م</p>
+                    </div>
+                    <div class="mx-auto">
+                        <button class="btn primary-bg text-light book px-5">احجز</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 my-5">
+                <div class="result-item">
+                    <div class="pic">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/doctor-result.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2 class="primary-text">د.جمال الدين محمد فتحي</h2>
+                        <div class="d-flex">
+                            <div class="mr-2">
+                                <img src="./images/icon-det.png" alt="">
+                            </div>
+                            <p>استشاري الحساسية والمناعة رئيس قسم الحساسية والمناعة بهيئة المصل واللقاح يتوفر
+                                اختبارات الحساسية وفحوصات المناعة والعلاج بالأمصال </p>
+                        </div>
+                        <div class="d-flex mb-5">
+                            <div class="mr-2">
+                                <img src="./images/icon-location.png" alt="">
+                            </div>
+                            <p>مصر الجديدة 12 شارع بطرس غالي الدور الرابع روكسي</p>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="mr-2">
+                                <img src="./images/Icon-phone.png" alt="">
+                            </div>
+                            <p>01142400557 / 016446521</p>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <div class="d-flex flex-column justify-content-center ">
+                                <div class="mb-1">
+                                    <img class="d-block mx-auto my-2" src="./images/icon-money.png" alt="">
+                                </div>
+                                <h8 class="text-center mb-2">سعر الكشف</h8>
+                                <h7 class="text-center primary-text">200 جنيه</h7>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center ">
+                                <div class="mb-1">
+                                    <img class="d-block mx-auto" src="./images/Icon feather-clock.png" alt="">
+                                </div>
+                                <h8 class="text-center mb-2">سعر الكشف</h8>
+                                <h7 class="text-center primary-text">200 جنيه</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <div class="mb-1">
+                            <img class="d-block mx-auto" src="./images/rating-star.png" alt="">
+                        </div>
+                        <p class="text-center">4.5</p>
+                    </div>
+                    <div class="available m-auto bg-dark text-light py-1 px-2 border-5 clearfix">
+                        <p class="float-left mb-0">متاح من السبت للخميس</p>
+                        <p class="float-right mb-0 pl-5">10:00-05:00م</p>
+                    </div>
+                    <div class="mx-auto">
+                        <button class="btn primary-bg text-light book px-5">احجز</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 my-5">
+                <div class="result-item">
+                    <div class="pic">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/doctor-result.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2 class="primary-text">د.جمال الدين محمد فتحي</h2>
+                        <div class="d-flex">
+                            <div class="mr-2">
+                                <img src="./images/icon-det.png" alt="">
+                            </div>
+                            <p>استشاري الحساسية والمناعة رئيس قسم الحساسية والمناعة بهيئة المصل واللقاح يتوفر
+                                اختبارات الحساسية وفحوصات المناعة والعلاج بالأمصال </p>
+                        </div>
+                        <div class="d-flex mb-5">
+                            <div class="mr-2">
+                                <img src="./images/icon-location.png" alt="">
+                            </div>
+                            <p>مصر الجديدة 12 شارع بطرس غالي الدور الرابع روكسي</p>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="mr-2">
+                                <img src="./images/Icon-phone.png" alt="">
+                            </div>
+                            <p>01142400557 / 016446521</p>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <div class="d-flex flex-column justify-content-center ">
+                                <div class="mb-1">
+                                    <img class="d-block mx-auto my-2" src="./images/icon-money.png" alt="">
+                                </div>
+                                <h8 class="text-center mb-2">سعر الكشف</h8>
+                                <h7 class="text-center primary-text">200 جنيه</h7>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center ">
+                                <div class="mb-1">
+                                    <img class="d-block mx-auto" src="./images/Icon feather-clock.png" alt="">
+                                </div>
+                                <h8 class="text-center mb-2">سعر الكشف</h8>
+                                <h7 class="text-center primary-text">200 جنيه</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <div class="mb-1">
+                            <img class="d-block mx-auto" src="./images/rating-star.png" alt="">
+                        </div>
+                        <p class="text-center">4.5</p>
+                    </div>
+                    <div class="available m-auto bg-dark text-light py-1 px-2 border-5 clearfix">
+                        <p class="float-left mb-0">متاح من السبت للخميس</p>
+                        <p class="float-right mb-0 pl-5">10:00-05:00م</p>
+                    </div>
+                    <div class="mx-auto">
+                        <button class="btn primary-bg text-light book px-5">احجز</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 my-5">
+                <div class="result-item">
+                    <div class="pic">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/doctor-result.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2 class="primary-text">د.جمال الدين محمد فتحي</h2>
+                        <div class="d-flex">
+                            <div class="mr-2">
+                                <img src="./images/icon-det.png" alt="">
+                            </div>
+                            <p>استشاري الحساسية والمناعة رئيس قسم الحساسية والمناعة بهيئة المصل واللقاح يتوفر
+                                اختبارات الحساسية وفحوصات المناعة والعلاج بالأمصال </p>
+                        </div>
+                        <div class="d-flex mb-5">
+                            <div class="mr-2">
+                                <img src="./images/icon-location.png" alt="">
+                            </div>
+                            <p>مصر الجديدة 12 شارع بطرس غالي الدور الرابع روكسي</p>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="mr-2">
+                                <img src="./images/Icon-phone.png" alt="">
+                            </div>
+                            <p>01142400557 / 016446521</p>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <div class="d-flex flex-column justify-content-center ">
+                                <div class="mb-1">
+                                    <img class="d-block mx-auto my-2" src="./images/icon-money.png" alt="">
+                                </div>
+                                <h8 class="text-center mb-2">سعر الكشف</h8>
+                                <h7 class="text-center primary-text">200 جنيه</h7>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center ">
+                                <div class="mb-1">
+                                    <img class="d-block mx-auto" src="./images/Icon feather-clock.png" alt="">
+                                </div>
+                                <h8 class="text-center mb-2">سعر الكشف</h8>
+                                <h7 class="text-center primary-text">200 جنيه</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <div class="mb-1">
+                            <img class="d-block mx-auto" src="./images/rating-star.png" alt="">
+                        </div>
+                        <p class="text-center">4.5</p>
+                    </div>
+                    <div class="available m-auto bg-dark text-light py-1 px-2 border-5 clearfix">
+                        <p class="float-left mb-0">متاح من السبت للخميس</p>
+                        <p class="float-right mb-0 pl-5">10:00-05:00م</p>
+                    </div>
+                    <div class="mx-auto">
+                        <button class="btn primary-bg text-light book px-5">احجز</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer class="primary-bg py-5">
         <div class="row">
             <div class="col-3 my-auto">
@@ -271,6 +530,29 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+
+        showSidebar = false;
+        const openSidebar = () => {
+            document.getElementById('sidebar').style.width = '300px';
+            showSidebar = true;
+        }
+        const closeSidebar = () => {
+            document.getElementById('sidebar').style.width = '0';
+            showSidebar = false;
+        }
+
+        const toggleSideBar = (event) => {
+        event.preventDefault();
+            if (showSidebar) {
+                closeSidebar();
+            } else {
+                openSidebar();
+            }
+        }
+    </script>
 </body>
 
 </html>

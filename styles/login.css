@@ -86,6 +86,47 @@ body {
   height: 55px;
 }
 
+.nav-shadow {
+  -webkit-box-shadow: 0px 1px 3px #00000029;
+          box-shadow: 0px 1px 3px #00000029;
+}
+
+.nav-container {
+  border-radius: 0 0 17px 0;
+}
+
+.nav-item {
+  font-size: 20px;
+  padding: 1rem 2rem;
+}
+
+@media (max-width: 769px) {
+  .nav-item {
+    padding: 1rem;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .language {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) {
+  .navbar {
+    width: 90%;
+  }
+}
+
+.login-btn-primary {
+  color: #fff;
+  background-color: #3f72af;
+}
+
+.login-btn-primary:hover {
+  background-color: #467fc4;
+  color: #fff;
+}
+
 .footer-link {
   font-family: tajawal-medium;
   font-size: 27px;
@@ -111,13 +152,6 @@ body {
 .rectangle-link img {
   position: relative;
   top: calc(50% - 13px);
-}
-
-.top-circle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 522px;
 }
 
 body {

@@ -22,37 +22,39 @@
         <div class="bottom-circle">
             <img class="font-size img-fluid w-100" src="./images/Ellipse -2.png" alt="">
         </div>
-        <nav class="navbar justify-content-between">
-            <div style="width: 100px;">
-                <img class="img-fluid w-100" src="./images/logo.png" alt="">
-            </div>
-            <!-- <img class="" src="./452766-PFPPU4-415.svg" alt=""> -->
-            <div class="d-flex mb-3">
-                <button class="btn nav-item primary-text">الرئيسية</button>
-                <button class="btn nav-item primary-text">إعرفنا</button>
-                <button class="btn nav-item primary-text">دكتور؟ إنضم إلينا</button>
-            </div>
-            <div class="d-flex login-container">
-                <button class="btn px-0"><img class="w-50" src="./images/egypt.png" alt=""></button>
-                <button class="btn login-btn px-4 border-25">تسجيل الدخول</button>
-            </div>
-        </nav>
+        <div class="nav-container">
+            <nav class="navbar justify-content-between">
+                <div style="width: 100px;">
+                    <img class="img-fluid w-100" src="./images/logo.png" alt="">
+                </div>
+                <!-- <img class="" src="./452766-PFPPU4-415.svg" alt=""> -->
+                <div class="d-flex mb-3">
+                    <button class="btn nav-item primary-text">الرئيسية</button>
+                    <button class="btn nav-item primary-text">إعرفنا</button>
+                    <button class="btn nav-item primary-text">دكتور؟ إنضم إلينا</button>
+                </div>
+                <div class="d-flex login-container">
+                    <button class="btn language px-0"><img class="w-50" src="./images/egypt.png" alt=""></button>
+                    <button class="btn login-btn-light px-4 border-25">تسجيل الدخول</button>
+                </div>
+            </nav>
+        </div>
         <div class="d-flex justify-content-end">
             <div class=" header-form mr-4 box-shadow">
                 <h5 class="text-center mb-4">اختار التخصص وحدد مكانك واختار دكتورك المناسب</h5>
                 <form class="px-5">
                     <select class="form-control box-shadow form-control-lg mb-5 h-55" aria-placeholder="اختار">
-                        <option class="grey-text">اختار التخصص</option>
+                        <option value="" disabled selected class="grey-text">اختار التخصص</option>
                         <option>عيون</option>
                         <option>جلدية</option>
                     </select>
                     <select class="form-control box-shadow form-control-lg mb-5 h-55" aria-placeholder="اختار">
-                        <option>المحافظة</option>
+                        <option value="" disabled selected>المحافظة</option>
                         <option>القاهرة</option>
                         <option>الإسكندرية</option>
                     </select>
                     <select class="form-control box-shadow form-control-lg mb-5 h-55" aria-placeholder="اختار">
-                        <option>المدينة</option>
+                        <option value="" disabled selected>المدينة</option>
                         <option>القاهرة</option>
                         <option>الإسكندرية</option>
                     </select>
