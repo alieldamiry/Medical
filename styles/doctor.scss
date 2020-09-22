@@ -1,0 +1,48 @@
+@import "global.scss";
+
+.main-grid{
+    display: flex;
+}
+
+.doctor {
+    box-shadow: 0px 0px 6px #00000029;
+    border-radius: 10px;
+    display: grid;
+    grid-gap: 10px;
+    margin:10px;
+    padding: 20px 5px;
+    grid-template-areas:
+        "pic content"
+        "rating content"
+        "rating content"
+        "rating content"
+        "patientRating patientRating";
+}
+
+@media(max-width:855px){
+    .main-grid{
+        flex-flow: column;
+        flex-direction: column-reverse;
+    }
+    .doctor {
+        grid-template-areas:
+            "pic pic"
+            "rating rating"
+            "content content"
+            "content content"
+            "patientRating patientRating";
+    }
+}
+
+.pic {
+    grid-area: pic;
+}
+.content {
+    grid-area: content;
+}
+.rating {
+    grid-area: rating;
+}
+.patients-rating{
+    grid-area: patientRating;
+}

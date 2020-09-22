@@ -86,6 +86,22 @@ body {
   height: 55px;
 }
 
+.top-circle-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 222px;
+}
+
+@media (max-width: 1160px) {
+  .top-circle-2 {
+    display: none;
+  }
+  .login-container {
+    margin: 1rem auto;
+  }
+}
+
 .nav-shadow {
   -webkit-box-shadow: 0px 1px 3px #00000029;
           box-shadow: 0px 1px 3px #00000029;
@@ -125,6 +141,10 @@ body {
 .login-btn-primary:hover {
   background-color: #467fc4;
   color: #fff;
+}
+
+footer {
+  margin-top: 250px;
 }
 
 .footer-link {

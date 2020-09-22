@@ -173,4 +173,63 @@ footer {
   position: relative;
   top: calc(50% - 13px);
 }
-/*# sourceMappingURL=global.css.map */
+
+.main-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.doctor {
+  -webkit-box-shadow: 0px 0px 6px #00000029;
+          box-shadow: 0px 0px 6px #00000029;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  margin: 10px;
+  padding: 20px 5px;
+      grid-template-areas: "pic content" "rating content" "rating content" "rating content" "patientRating patientRating";
+}
+
+@media (max-width: 855px) {
+  .main-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+  }
+  .doctor {
+        grid-template-areas: "pic pic" "rating rating" "content content" "content content" "patientRating patientRating";
+  }
+}
+
+.pic {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: pic;
+}
+
+.content {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 2;
+  grid-area: content;
+}
+
+.rating {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: rating;
+}
+
+.patients-rating {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: patientRating;
+}
+/*# sourceMappingURL=doctor.css.map */
