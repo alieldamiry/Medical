@@ -1,0 +1,16 @@
+.transition-fade {
+    transition: 400ms;
+    transform: translateX(0);
+}
+.main-grid {
+    /* transition: 500ms; */
+}
+
+html.is-animating .transition-fade {
+    transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade {
+    transform: translateX(-100%);
+    opacity: 0;
+}

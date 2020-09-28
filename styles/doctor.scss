@@ -2,6 +2,9 @@
 
 .main-grid{
     display: flex;
+    .info-grid{
+        margin: 10px;
+    }
 }
 
 .doctor {
@@ -23,14 +26,6 @@
     .main-grid{
         flex-flow: column;
         flex-direction: column-reverse;
-    }
-    .doctor {
-        grid-template-areas:
-            "pic pic"
-            "rating rating"
-            "content content"
-            "content content"
-            "patientRating patientRating";
     }
 }
 

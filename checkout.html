@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <!-- BootStrap English -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <!-- Bootstrap RTL -->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
+        integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/checkout.css">
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+    <!-- swup -->
+    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script defer src="./js/swup.js"></script>
+    <link rel="stylesheet" href="./styles/swup.css">
+</head>
+
+<body style="background-color:#F5F6FA;">
+    <div class="top-circle-2">
+        <img class="img-fluid w-100" src="./images/top-circle-2.png" alt="eclipse">
+    </div>
+    <div class="nav-container nav-shadow">
+        <nav class="navbar justify-content-between">
+            <div style="width: 100px;">
+                <img class="img-fluid w-100" src="./images/logo.png" alt="">
+            </div>
+            <div class="d-flex mb-3">
+                <button class="btn nav-item primary-text">الرئيسية</button>
+                <button class="btn nav-item primary-text">إعرفنا</button>
+                <button class="btn nav-item primary-text">دكتور؟ إنضم إلينا</button>
+            </div>
+            <div class="d-flex login-container">
+                <button class="btn language px-0"><img class="w-50" src="./images/egypt.png" alt=""></button>
+                <button class="btn login-btn-primary px-4 border-25">تسجيل الدخول</button>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <div class="main-grid">
+            <div class="info-grid">
+                <div class="info bg-white">
+                    <div class="text-center mb-4">
+                        <img src="./images/doctor-result.png" alt="">
+                    </div>
+                    <h4 class="primary-text">د.جمال الدين محمد فتحي</h4>
+                    <p class="font-tajawal-medium">استشاري الحساسية والمناعة</p>
+                    <p class="font-tajawal-medium">مصر الجديدة 12 شارع بطرس غالي الدور الرابع روكسي مصر الجديدة.برج
+                        الحرية</p>
+                    <p>سعر الكشف: 200 جنيه</p>
+                </div>
+            </div>
+            <div id="swup" class="transition-fade" style="position: relative; z-index: 1;">
+                <div class="booking">
+                    <h5 class="mb-5 text-left">استكمال الحجز</h5>
+                    <form class="text-left">
+                        <div class="d-flex">
+                            <div class="form-group mr-4">
+                                <label for="exampleInputEmail1">اسم المريض</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group mr-4">
+                                <label for="exampleInputPassword1">رقم التلفون</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="primary-bg py-5">
+        <div class="row">
+            <div class="col-lg-3 my-auto">
+                <div class="logo-circle rounded-circle mb-4 mx-auto">
+                    <img class="w-100" src="./images/logo.png" alt="logo">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <h3 class="text-light mb-4">روابط الموقع</h3>
+                <div class="d-flex flex-column text-grey">
+                    <a class="footer-link mb-4" href="">التخصصات</a>
+                    <a class="footer-link mb-4" href="">سياسة الإستخدام</a>
+                    <a class="footer-link mb-4" href="">اسم الدكتور</a>
+                    <a class="footer-link mb-4" href="">إنضم إلينا</a>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <h3 class="text-light mb-4">روابط الموقع</h3>
+                <div class="d-flex flex-column text-grey">
+                    <a class="footer-link mb-4" href="">التخصصات</a>
+                    <a class="footer-link mb-4" href="">سياسة الإستخدام</a>
+                    <a class="footer-link mb-4" href="">اسم الدكتور</a>
+                    <a class="footer-link mb-4" href="">إنضم إلينا</a>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="d-flex flex-column align-items-center justify-content-center h-100 px-5">
+                    <h3 class="text-light text-center mb-5 ">معانا تقدر تحجز وتقارن بين كثير من أفضل الدكاترة خلالنا
+                    </h3>
+                    <div class="text-center">
+                        <a href="" class="rectangle-link mx-3">
+                            <img src="./images/google-footer.png" alt="">
+                        </a>
+                        <a href="" class="rectangle-link mx-3">
+                            <img src="./images/twitter-footer.png" alt="">
+                        </a>
+                        <a href="" class="rectangle-link mx-3">
+                            <img src="./images/facebook-footer.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
