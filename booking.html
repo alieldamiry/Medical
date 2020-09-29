@@ -11,15 +11,17 @@
     <!-- Bootstrap RTL -->
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
         integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/booking.css">
-    <!-- Font Awesome -->
-    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-
     <!-- scripts -->
     <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
     <script defer src="./js/swup.js"></script>
     <link rel="stylesheet" href="./styles/swup.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/booking.css">
+    <link rel="stylesheet" href="./styles/checkout.css">
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+
 </head>
 
 <body style="background-color:#F5F6FA;">
@@ -84,8 +86,7 @@
                         <div class="mx-auto p-4">
                             <h5 class="grey-text text-center mb-4 text-grey">اختر يوم</h5>
                             <div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 20px;">
-                                <div>05:00م - 05:30م</div>
-                                <div>05:00م - 05:30م</div>
+                                <input type="date" >
                             </div>
                         </div>
                     </div>
@@ -146,6 +147,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+        <script>
+            // show-card-info
+            // payment-icon
+            console.log('startg');
+            $(".payment-icon").click(function(){
+                console.log($("#card-info"));
+                $("#card-info").css("height", "600px");
+            });
+        </script>
 </body>
 
 </html>

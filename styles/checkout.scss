@@ -15,16 +15,63 @@
     }
 }
 
-.booking {
+.patient-form {
     background-color: #fff;
-    text-align: center;
     padding: 50px 30px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #00000033;
+}
+.card-info {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00000033;
+}
+.payment-icon {
+    transition: 200ms;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+#card-info {
+    height: 0;
+    overflow: hidden;
+    transition: all 900ms;
 }
 
 @media (max-width: 1024px) {
     .main-grid {
         flex-flow: column;
     }
+}
+
+.text-input {
+    width: 288px;
+    background: #ebebeb 0% 0% no-repeat padding-box;
+    border: none;
+    &:focus {
+        background-color: #ebebeb;
+        outline: 0;
+        box-shadow: none;
+    }
+}
+.small-input {
+    width: 80px;
+}
+@media (max-width: 681px) {
+    .text-input-group {
+        flex-direction: column;
+    }
+}
+
+// Hiding arrows in number input
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
 }
