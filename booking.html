@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="./styles/checkout.css">
     <!-- Font Awesome -->
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-
+    <!-- Calendar style -->
+    <link rel="stylesheet" href="./styles/tavo-calendar.css">
 
 </head>
 
@@ -83,10 +84,10 @@
                                 <button class="time-box">05:00 م -- 05:30 م</button>
                             </div>
                         </div>
-                        <div class="mx-auto p-4">
+                        <div class="mx-auto">
                             <h5 class="grey-text text-center mb-4 text-grey">اختر يوم</h5>
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 20px;">
-                                <input type="date" >
+                            <div style="width: 337px;">
+                                <div id="my-calendar"></div>
                             </div>
                         </div>
                     </div>
@@ -147,15 +148,48 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-        <script>
-            // show-card-info
-            // payment-icon
-            console.log('startg');
-            $(".payment-icon").click(function(){
-                console.log($("#card-info"));
-                $("#card-info").css("height", "600px");
-            });
-        </script>
+    <script>
+        // show-card-info
+        // payment-icon
+        console.log('startg');
+        $(".payment-icon").click(function () {
+            console.log($("#card-info"));
+            $("#card-info").css("height", "600px");
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <!-- Calendar Script -->
+    <script src="./js/TavoCalendar.js"></script>
+    <!-- initialize Calendar and select date event -->
+    <script>
+        const calendar_el = document.querySelector('#my-calendar');
+        const date = new Date();
+        const currYear = date.getFullYear();
+        const currMonth = date.getMonth() + 1;
+        const currDay = date.getDate();
+        let selectedDate = '';
+        const my_calendar = new TavoCalendar(calendar_el, {
+            date: '',
+            selected: [''],
+            // date: `${currYear}-${currMonth}-${currDay}`,
+            // selected: [`${currYear}-${currMonth}-${currDay}`],
+        })
+
+        calendar_el.addEventListener('calendar-select', (ev) => {
+            selectedDate = my_calendar.getSelected();
+            console.log(selectedDate);
+            // convert to english string
+
+            // new Date(year, month, day)
+            // alert(selectedDate);
+        })
+
+        // calendar_el.addEventListener('calendar-change', (ev) => {
+        //     const m = my_calendar.getFocusMonth();
+
+        //     alert(`Month change to ${m}`)
+        // })
+    </script>
 </body>
 
 </html>

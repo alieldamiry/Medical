@@ -89,5 +89,8 @@
         -ms-flex-flow: column;
             flex-flow: column;
   }
+  .time-box {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=booking.css.map */
