@@ -1,6 +1,7 @@
-@import "global.scss";
 
-
+body{
+    background-color: #F5F6FA;
+}
 // Results
 .results {
     display: grid;
@@ -154,4 +155,8 @@
     width: 102%;
     background-size: cover;
     background-color: #fff;
+}
+
+footer{
+    margin-top: 0 !important;
 }

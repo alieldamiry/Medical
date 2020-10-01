@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="./styles/checkout.css">
     <!-- Font Awesome -->
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-
     <!-- swup -->
     <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
     <script defer src="./js/swup.js"></script>
@@ -59,9 +58,9 @@
             </div>
             <div id="swup" class="transition-fade" style="position: relative; z-index: 1;">
                 <div class="patient-form mx-3">
-                    <h5 class="mb-5 text-left">استكمال الحجز</h5>
+                    <h5 class="mb-4 text-left">استكمال الحجز</h5>
                     <div class="text-left">
-                        <div class="d-flex text-input-group mb-4">
+                        <div class="d-flex text-input-group mb-5">
                             <div class="form-group mr-5">
                                 <label class="primary-text" for="name">اسم المريض</label>
                                 <input type="email" class="form-control text-input" id="name"
@@ -74,7 +73,7 @@
                         </div>
                         <div class="mb-5">
                             <h5 class="mb-4">اختر طريقة الدفع</h5>
-                            <div class="row payment-group mb-4">
+                            <div class="row payment-group mb-">
                                 <div id="payment-icon" class="payment-icon p-2 m-3"
                                     style="width: 100px; box-shadow: 0px 1px 10px #00000029;">
                                     <img class="mt-2 w-100" src="./images/vodafone-svg.png" alt="">
@@ -198,9 +197,12 @@
     <script>
         // show-card-info
         // payment-icon
-        $(".payment-icon").click(function(){
-            console.log('jhfdsjh');
-            $("#card-info").css("height", "530px");
+        $(".payment-icon").click(function () {
+            if (screen.width <= 681) {
+                $("#card-info").css("height", "615px");
+            }else{
+            $("#card-info").css("height", "444px");
+            }
         });
     </script>
 </body>

@@ -10,8 +10,17 @@ a {
   color: unset;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: tajawal-bold;
+  min-height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
 }
 
 .row {
@@ -143,6 +152,10 @@ body {
   color: #fff;
 }
 
+footer {
+  margin-top: 100px;
+}
+
 .footer-link {
   font-family: tajawal-medium;
   font-size: 27px;
@@ -168,6 +181,10 @@ body {
 .rectangle-link img {
   position: relative;
   top: calc(50% - 13px);
+}
+
+html {
+  height: 100%;
 }
 
 body {

@@ -1,4 +1,3 @@
-@import "global.scss";
 
 .main-grid{
     display: flex;
@@ -23,6 +22,14 @@
 }
 
 @media(max-width:855px){
+    .doctor{
+        grid-template-areas:
+        "pic pic"
+        "rating rating"
+        "content content"
+        "content content"
+        "patientRating patientRating";
+    }
     .main-grid{
         flex-flow: column;
         flex-direction: column-reverse;

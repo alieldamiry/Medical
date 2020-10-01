@@ -7,8 +7,14 @@ a {
     text-decoration: none !important;
     color: unset;
 }
+html{
+    height: 100%;
+}
 body {
     font-family: tajawal-bold;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 .row {
     margin-left: 0;
@@ -127,7 +133,9 @@ body {
     }
 }
 // footer
-
+footer{
+    margin-top: 100px;
+}
 .footer-link {
     font-family: tajawal-medium;
     font-size: 27px;

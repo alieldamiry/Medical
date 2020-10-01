@@ -92,12 +92,12 @@
   cursor: pointer;
 }
 .tavo-calendar__day span {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  display: inline-block;
-  line-height: 32px;
-  font-size: 15px;
+  width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 46px;
+    font-size: 18px;
 }
 .tavo-calendar__day span:hover {
   background-color: #6F9DD4;

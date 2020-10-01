@@ -11,55 +11,57 @@
     <!-- Bootstrap RTL -->
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
         integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/result.css">
     <!-- Font Awesome -->
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 </head>
-
 <body>
-    <div class="top-circle-2">
+    <!-- <div class="top-circle-2">
         <img class="img-fluid w-100" src="./images/top-circle-2.png" alt="eclipse">
-    </div>
-    <div class="nav-container nav-shadow">
-        <nav class="navbar justify-content-between">
-            <div style="width: 100px;">
-                <img class="img-fluid w-100" src="./images/logo.png" alt="">
-            </div>
-            <div class="d-flex mb-3">
-                <button class="btn nav-item primary-text">الرئيسية</button>
-                <button class="btn nav-item primary-text">إعرفنا</button>
-                <button class="btn nav-item primary-text">دكتور؟ إنضم إلينا</button>
-            </div>
-            <div class="d-flex login-container">
-                <button class="btn language px-0"><img class="w-50" src="./images/egypt.png" alt=""></button>
-                <button class="btn login-btn-primary px-4 border-25">تسجيل الدخول</button>
+    </div> -->
+    <nav>
+        <div class="nav-container nav-shadow">
+            <nav class="navbar justify-content-between">
+                <div style="width: 100px;">
+                    <img class="img-fluid w-100" src="./images/logo.png" alt="">
+                </div>
+                <div class="d-flex mb-3">
+                    <button class="btn nav-item primary-text">الرئيسية</button>
+                    <button class="btn nav-item primary-text">إعرفنا</button>
+                    <button class="btn nav-item primary-text">دكتور؟ إنضم إلينا</button>
+                </div>
+                <div class="d-flex login-container">
+                    <button class="btn language px-0"><img class="w-50" src="./images/egypt.png" alt=""></button>
+                    <button class="btn login-btn-primary px-4 border-25">تسجيل الدخول</button>
+                </div>
+            </nav>
+        </div>
+        <nav class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center py-4">
+                <select class="filter-select form-control grey-text px-4 py-2 mx-2" style="background-color: #EFEEEE;"
+                    aria-placeholder="اختار">
+                    <option value="" disabled selected>التخصص</option>
+                    <option>عيون</option>
+                    <option>جلدية</option>
+                </select>
+                <select class="filter-select form-control grey-text px-4 py-2 mx-2" style="background-color: #EFEEEE;"
+                    aria-placeholder="اختار">
+                    <option value="" disabled selected>المحافظة</option>
+                    <option>القاهرة</option>
+                    <option>الاسكندرية</option>
+                </select>
+                <select class="filter-select form-control grey-text px-4 py-2 mx-2" style="background-color: #EFEEEE;"
+                    aria-placeholder="اختار">
+                    <option value="" disabled selected>المنطقة</option>
+                    <option>القاهرة</option>
+                    <option>الاسكندرية</option>
+                </select>
+                <!-- <button class="btn text-light primary-bg px-5 py-2 mx-2">أبحث</button> -->
             </div>
         </nav>
-    </div>
-    <nav class="d-flex justify-content-center">
-        <div class="d-flex justify-content-center py-4">
-            <select class="filter-select form-control grey-text px-4 py-2 mx-2" style="background-color: #EFEEEE;"
-                aria-placeholder="اختار">
-                <option value="" disabled selected>التخصص</option>
-                <option>عيون</option>
-                <option>جلدية</option>
-            </select>
-            <select class="filter-select form-control grey-text px-4 py-2 mx-2" style="background-color: #EFEEEE;"
-                aria-placeholder="اختار">
-                <option value="" disabled selected>المحافظة</option>
-                <option>القاهرة</option>
-                <option>الاسكندرية</option>
-            </select>
-            <select class="filter-select form-control grey-text px-4 py-2 mx-2" style="background-color: #EFEEEE;"
-                aria-placeholder="اختار">
-                <option value="" disabled selected>المنطقة</option>
-                <option>القاهرة</option>
-                <option>الاسكندرية</option>
-            </select>
-            <!-- <button class="btn text-light primary-bg px-5 py-2 mx-2">أبحث</button> -->
-        </div>
     </nav>
-    <main class="d-flex" style="background-color:#F5F6FA;">
+    <main class="d-flex">
         <nav class="position-relative">
             <span class="sidebar-btn position-absolute" style="z-index: 100; top: 5px; right: 0;">
                 <a href="#" onclick="toggleSideBar(event)">
@@ -362,7 +364,7 @@
         }
 
         const toggleSideBar = (event) => {
-        event.preventDefault();
+            event.preventDefault();
             if (showSidebar) {
                 closeSidebar();
             } else {

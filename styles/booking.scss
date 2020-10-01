@@ -18,7 +18,7 @@
 .booking {
     background-color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 20px 10px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #00000033;
 }
@@ -66,15 +66,15 @@
     }
 }
 @media (max-width: 700px) {
-    .booking{
-        .border-right{
+    .booking {
+        .border-right {
             border: none !important;
         }
     }
     .booking > div {
         flex-flow: column;
     }
-    .time-box{
+    .time-box {
         font-size: 14px;
     }
 }

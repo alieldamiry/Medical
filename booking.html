@@ -151,7 +151,6 @@
     <script>
         // show-card-info
         // payment-icon
-        console.log('startg');
         $(".payment-icon").click(function () {
             console.log($("#card-info"));
             $("#card-info").css("height", "600px");
@@ -172,23 +171,15 @@
             date: '',
             selected: [''],
             // date: `${currYear}-${currMonth}-${currDay}`,
-            // selected: [`${currYear}-${currMonth}-${currDay}`],
+            // selected: [`${currYear}-${currMonth}-${currDay}`]
         })
 
         calendar_el.addEventListener('calendar-select', (ev) => {
-            selectedDate = my_calendar.getSelected();
-            console.log(selectedDate);
-            // convert to english string
-
-            // new Date(year, month, day)
-            // alert(selectedDate);
+            alert(my_calendar.getSelected());
         })
-
-        // calendar_el.addEventListener('calendar-change', (ev) => {
-        //     const m = my_calendar.getFocusMonth();
-
-        //     alert(`Month change to ${m}`)
-        // })
+        $(".time-box").click((event) => {
+            console.log(event.target.innerHTML);
+        })
     </script>
 </body>
 
