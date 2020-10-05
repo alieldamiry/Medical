@@ -1,0 +1,111 @@
+html {
+  height: 100%;
+}
+
+body {
+  /* Location of the image */
+  background-image: url("../images/login-background.jpg");
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  padding: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: tajawal-bold;
+}
+
+.sign-box {
+  top: 23px;
+  left: 701px;
+  width: 640px;
+  border-radius: 34px;
+  opacity: 1;
+  -webkit-backdrop-filter: blur(33px);
+          backdrop-filter: blur(33px);
+  background-color: #fff;
+  opacity: 0.9;
+  padding: 54px 82px;
+}
+
+@media (max-width: 576px) {
+  .sign-box {
+    padding: 54px 33px;
+  }
+}
+
+.social-icon {
+  width: 50px;
+}
+
+.checkboxContainer input {
+  display: none;
+}
+
+.checkboxContainer {
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+  font-family: sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.checkboxContainer .checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #8888;
+  position: absolute;
+  top: 2.5px;
+  left: 5px;
+  border-radius: 4px;
+}
+
+.checkboxContainer input {
+  display: none;
+}
+
+.checkboxContainer {
+  padding-right: 30px;
+  position: relative;
+  cursor: pointer;
+  font-family: sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.checkboxContainer .checkmark {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 2.5px;
+  right: 0;
+  border-radius: 4px;
+}
+
+.checkboxContainer input:checked + .checkmark:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-color: #8888;
+}
+/*# sourceMappingURL=sign.css.map */

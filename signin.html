@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>Signin</title>
+    <!-- BootStrap English -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
     <!-- Bootstrap RTL -->
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
         integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/sign.css">
 </head>
 
 <body>
-    <div class="login-box">
+    <div class="sign-box">
         <div>
             <h1 class="text-center primary-text mb-5">تسجيل الدخول</h1>
         </div>
@@ -27,11 +30,15 @@
             </div>
             <button class="btn mb-4 w-100 primary-bg text-light border-25 py-3">دخول</button>
             <div class="d-flex justify-content-between mb-4 grey-text">
-                <label class="checkboxContainer">
-                    تذكرني
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
+                <div class="checkbox-item">
+                    <label class="checkboxContainer">
+                        <p class="font-tajawal-bold">
+                            تذكرني
+                        </p>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
                 <a href="">
                     <p class="grey-text">نسيت كلمة المرور؟</p>
                 </a>
@@ -40,7 +47,7 @@
                 <img class="social-icon" src="./images/facebook.png" alt="">
                 <img class="social-icon" src="./images/google-plus.png" alt="">
             </div>
-            <p class="text-center grey-text">ليس لديك حساب؟ <a href="">إنشاء حساب الآن</a></p>
+            <p class="text-center grey-text">ليس لديك حساب؟ <a href="signup.html">إنشاء حساب الآن</a></p>
         </form>
     </div>
 </body>

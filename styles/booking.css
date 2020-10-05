@@ -57,6 +57,7 @@
 .time-box:disabled {
   background-color: #959595;
   position: relative;
+  cursor: not-allowed;
 }
 
 .calendar {

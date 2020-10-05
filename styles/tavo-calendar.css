@@ -116,7 +116,6 @@
 .tavo-calendar__day_lock {
   cursor: default;
   color: rgb(194, 194, 194);
-  background-color: unset;
 }
 .tavo-calendar__day_off day,
 .tavo-calendar__day_off day:hover,

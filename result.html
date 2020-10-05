@@ -4,23 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>result</title>
+    <title>login</title>
     <!-- BootStrap English -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
     <!-- Bootstrap RTL -->
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
         integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
-        <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/result.css">
     <!-- Font Awesome -->
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 </head>
+
 <body>
-    <!-- <div class="top-circle-2">
-        <img class="img-fluid w-100" src="./images/top-circle-2.png" alt="eclipse">
-    </div> -->
-    <nav>
+    <nav class="bg-white">
         <div class="nav-container nav-shadow">
             <nav class="navbar justify-content-between">
                 <div style="width: 100px;">
@@ -63,9 +61,9 @@
     </nav>
     <main class="d-flex">
         <nav class="position-relative">
-            <span class="sidebar-btn position-absolute" style="z-index: 100; top: 5px; right: 0;">
+            <span class="sidebar-btn mx-3 position-absolute">
                 <a href="#" onclick="toggleSideBar(event)">
-                    <svg width="40" height="40">
+                    <svg width="30" height="30">
                         <path d="M0,5 30,5" stroke="#3F72AF" stroke-width="5" />
                         <path d="M0,14 30,14" stroke="#3F72AF" stroke-width="5" />
                         <path d="M0,23 30,23" stroke="#3F72AF" stroke-width="5" />
@@ -352,7 +350,6 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script>
-
         showSidebar = false;
         const openSidebar = () => {
             document.getElementById('sidebar').style.width = '300px';

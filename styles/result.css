@@ -1,5 +1,5 @@
 body {
-  background-color: #F5F6FA;
+  background-color: #f5f6fa;
 }
 
 .results {
@@ -30,7 +30,7 @@ body {
 
 @media (min-width: 994px) {
   .result-item {
-        grid-template-areas: "pic content content rating" "pic content content rating" "pic available available book";
+        grid-template-areas: "pic content content rating" "pic content content rating" "pic available available book";
   }
   .pic {
     -ms-grid-row: 1;
@@ -98,6 +98,11 @@ body {
   height: 100%;
 }
 
+.sidebar-btn {
+  z-index: 100;
+  top: 5px;
+}
+
 @media (min-width: 992px) {
   .sidebar-btn {
     display: none;
@@ -121,17 +126,33 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  text-align: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 10px 20px;
+}
+
+.search-container .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .search-container input {
   padding: 0 4px;
-  position: absolute;
-  bottom: 30px;
   border: none;
-  width: 93%;
   margin-right: 10px;
+  width: 93%;
   border-bottom: 1px solid #ccc;
   padding-bottom: 0;
 }
@@ -151,10 +172,32 @@ body {
 }
 
 .search-icon {
+  border-bottom: 1px solid #ccc;
+}
+
+.checkboxContainer input {
+  display: none;
+}
+
+.checkboxContainer {
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+  font-family: sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.checkboxContainer .checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #8888;
   position: absolute;
-  left: 10px;
-  bottom: 30px;
-  z-index: 1;
+  top: 2.5px;
+  left: 5px;
+  border-radius: 4px;
 }
 
 .checkboxContainer input {
@@ -175,7 +218,7 @@ body {
 .checkboxContainer .checkmark {
   width: 20px;
   height: 20px;
-  border: 2px solid #ccc;
+  border: 1px solid #ccc;
   position: absolute;
   top: 2.5px;
   right: 0;
@@ -185,8 +228,8 @@ body {
 .checkboxContainer input:checked + .checkmark:after {
   content: "";
   position: absolute;
-  height: 102%;
-  width: 102%;
+  height: 100%;
+  width: 100%;
   background-size: cover;
   background-color: #fff;
 }

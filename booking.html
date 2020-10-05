@@ -173,12 +173,11 @@
             // date: `${currYear}-${currMonth}-${currDay}`,
             // selected: [`${currYear}-${currMonth}-${currDay}`]
         })
-
         calendar_el.addEventListener('calendar-select', (ev) => {
             alert(my_calendar.getSelected());
         })
         $(".time-box").click((event) => {
-            console.log(event.target.innerHTML);
+            alert(event.target.innerHTML);
         })
     </script>
 </body>

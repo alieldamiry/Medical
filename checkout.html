@@ -23,6 +23,28 @@
 </head>
 
 <body style="background-color:#F5F6FA;">
+    <!-- Modal -->
+    <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content p-4" style="border-radius: 26px;">
+                <div class="mb-5">
+                    <div style="width: 200px; margin: auto;">
+                        <img class="w-100" src="./images/Done.svg" alt="">
+                    </div>
+                </div>
+                <div class="text-center grey-text mb-4">
+                    <h3 class="primary-text">تم حجز الموعد</h3>
+                    <p>دكتور جمال الدين محمد فتحي</p>
+                    <p>مصر الجديدة 12 شارع بطرس غالي الدوار الرابع روكسي مصر الجديدة برج الحريةالكامل الساعه 9 مساءً</p>
+                </div>
+                <div class="text-center">
+                    <p class="grey-text">تم الدفع بواسطة بطاقة الإئتمان</p>
+                    <button type="button" class="btn primary-bg text-light px-5" data-dismiss="modal">تم</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="top-circle-2">
         <img class="img-fluid w-100" src="./images/top-circle-2.png" alt="eclipse">
     </div>
@@ -133,7 +155,7 @@
                                 </div>
                                 <div class="text-center">
                                     <a class="primary-bg px-5 border-25 py-2 text-light" role="button"
-                                        href="/checkout.html">تأكيد الحجز</a>
+                                        href="#" data-toggle="modal" data-target="#exampleModal">تأكيد الحجز</a>
                                 </div>
                             </div>
                         </div>
@@ -200,8 +222,8 @@
         $(".payment-icon").click(function () {
             if (screen.width <= 681) {
                 $("#card-info").css("height", "615px");
-            }else{
-            $("#card-info").css("height", "444px");
+            } else {
+                $("#card-info").css("height", "444px");
             }
         });
     </script>
