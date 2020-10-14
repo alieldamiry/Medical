@@ -4,7 +4,7 @@
     /* Location of the image */
     background-image: url("../images/home-header.png");
     /* Background image is centered vertically and horizontally at all times */
-    background-position: center center;
+    background-position: top center;
     /* Background image doesn't tile */
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,7 +12,6 @@
       while the background image is loading */
     position: relative;
 }
-
 
 .top-circle {
     position: absolute;

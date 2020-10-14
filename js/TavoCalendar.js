@@ -80,7 +80,7 @@
         format: MOMENT_F,
         /* Warnign ! change locale to only latin languages or arabic, if you want to change to other langauges, 
         be careful. The selectedDay is stored in locale numbers, this may lead to problems when sending selected day to an API */
-        locale: 'en',
+        locale: 'ar',
         date: null,
         date_start: null,
         date_end: null,
