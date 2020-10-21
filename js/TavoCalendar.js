@@ -246,6 +246,10 @@
 
         // Not always start of the month matches start of the week
         let offset = moment_copy.isoWeekday() % (7 + this.locale_data.firstDayOfWeek());
+        // console.log(this.config.locale)
+        if (this.config.locale === 'ar') {
+            offset = offset + 5;
+        }
 
         if (offset > 0) {
             for (var i = this.locale_data.firstDayOfWeek(); i < offset; i++) {
@@ -454,7 +458,7 @@
 
         if (this.config.locale === 'ar') {
             return fixNumbers(this.state.selected);
-        }else{
+        } else {
             return this.state.selected;
         }
     }
