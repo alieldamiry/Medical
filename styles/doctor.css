@@ -60,4 +60,12 @@
   -ms-grid-column-span: 2;
   grid-area: patientRating;
 }
+
+.rating-text {
+  padding: 10px;
+}
+
+.rating-text:focus {
+  outline-color: #3F72AF;
+}
 /*# sourceMappingURL=doctor.css.map */

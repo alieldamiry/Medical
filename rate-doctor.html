@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rate doctor</title>
+    <!-- BootStrap English -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <!-- Bootstrap RTL -->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
+        integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/doctor.css">
+    <link rel="stylesheet" href="./styles/rating.css">
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+</head>
+
+<body style="background-color:#F5F6FA;">
+    <div class="top-circle-2">
+        <img class="img-fluid w-100" src="./images/top-circle-2.png" alt="eclipse">
+    </div>
+    <div class="nav-container nav-shadow">
+        <nav class="navbar justify-content-between">
+            <div style="width: 100px;">
+                <img class="img-fluid w-100" src="./images/logo.png" alt="">
+            </div>
+            <div class="d-flex mb-3">
+                <div class="d-flex mb-3">
+                    <a href="home.html" class="btn nav-item primary-text">الرئيسية</a>
+                    <a class="btn nav-item primary-text">إعرفنا</a>
+                    <a href="join.html" class="btn nav-item primary-text">دكتور؟ إنضم إلينا</a>
+                </div>
+            </div>
+            <div class="d-flex login-container">
+                <button class="btn language px-0"><img class="w-50" src="./images/egypt.png" alt=""></button>
+                <button class="btn login-btn-primary px-4 border-25">تسجيل الدخول</button>
+            </div>
+        </nav>
+    </div>
+    <main style="max-width: 1500px;">
+        <div class="main-grid">
+            <div class="info-grid">
+                <div style="width:270px; border-radius: 10px; box-shadow: 0px 0px 10px #00000033;"
+                    class="mx-auto py-3 my-3 bg-white">
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="mx-2" style="width: 25px;">
+                            <img class="w-100 img-fluid" src="./images/Icon material-event-available.png" alt="">
+                        </div>
+                        <div>
+                            <p class="mb-0">متاح من السبت للخميس</p>
+                            <p class="faded mb-0">من 5 مساء إلى 10 مساء</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="mx-2" style="width: 30px;">
+                            <img class="w-100 img-fluid" src="./images/Icon feather-clock.png" alt="">
+                        </div>
+                        <div class="faded">
+                            <p class="mb-0">مدة الانتظار 10 دقيقة</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="mx-2" style="width: 30px;">
+                            <img class="w-100 img-fluid" src="./images/icon-money.png" alt="">
+                        </div>
+                        <div>
+                            <p class="mb-0">سعر الكشف - <span class="faded">200 جنيه</span></p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a href="booking.html" class="btn primary-bg text-light px-5">إحجز</a>
+                    </div>
+                </div>
+            </div>
+            <div class="doctors">
+                <div class="doctor bg-white">
+                    <div class="pic">
+                        <div style="width: 150px;" class="d-flex justify-content-center mx-auto">
+                            <img class="w-100" src="./images/doctor-result.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2 class="primary-text mb-5">د.جمال الدين محمد فتحي</h2>
+                        <div class="d-flex">
+                            <div class="mr-2">
+                                <img src="./images/icon-det.png" alt="">
+                            </div>
+                            <p> فع الوجه, تقشير الوجه, علاج تجاعيد الوجه, تجميل
+                                الوجه, حقن الفيلر, عملية شد الجبهة, فراكشنال ليزر, علاج النمش ازالة الشعر بالليزر للجسم
+                                بالكامل, تقشير البشرة بماسك الذهب, علاج تساقط الشعر, علاج سقوط الشعر للسيدات</p>
+                        </div>
+                        <div class="d-flex mb-5">
+                            <div class="mr-2">
+                                <img src="./images/icon-location.png" alt="">
+                            </div>
+                            <p>مصر الجديدة 12 شارع بطرس غالي الدور الرابع روكسي</p>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="mr-2">
+                                <img src="./images/Icon-phone.png" alt="">
+                            </div>
+                            <p>01142400557 / 016446521</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <div class="mb-1">
+                            <img class="d-block mx-auto" src="./images/rating-star.png" alt="">
+                        </div>
+                        <p class="text-center">4.5</p>
+                    </div>
+                    <div class="patients-rating mt-4">
+                        <form action="" style="padding: 0 15%;">
+                            <div class="d-md-flex justify-content-between align-items-center">
+                                <h6 class="primary-text">أضف تقييمك</h6>
+                                <div class="star-rating"><s><s><s><s><s></s></s></s></s></s></div>
+                                <!-- <div class="dummy-div"></div>
+                                <div class="dummy-div"></div> -->
+                                <input class="invisible w-0" id="rating-value" type="number">
+                            </div>
+                            <textarea class="rating-text w-100 h-auto" placeholder="اكتب تقييمك" name="" id="" cols="30" rows="10"></textarea>
+                            <div class="text-center">
+                                <button class="btn text-light primary-bg">أضف التقييم</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="primary-bg py-5">
+        <div class="row">
+            <div class="col-lg-3 my-auto">
+                <div class="logo-circle rounded-circle mb-4 mx-auto">
+                    <img class="w-100" src="./images/logo.png" alt="logo">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <h3 class="text-light mb-4">روابط الموقع</h3>
+                <div class="d-flex flex-column text-grey">
+                    <a class="footer-link mb-4" href="">التخصصات</a>
+                    <a class="footer-link mb-4" href="">سياسة الإستخدام</a>
+                    <a class="footer-link mb-4" href="">اسم الدكتور</a>
+                    <a class="footer-link mb-4" href="">إنضم إلينا</a>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <h3 class="text-light mb-4">روابط الموقع</h3>
+                <div class="d-flex flex-column text-grey">
+                    <a class="footer-link mb-4" href="">التخصصات</a>
+                    <a class="footer-link mb-4" href="">سياسة الإستخدام</a>
+                    <a class="footer-link mb-4" href="">اسم الدكتور</a>
+                    <a class="footer-link mb-4" href="">إنضم إلينا</a>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="d-flex flex-column align-items-center justify-content-center h-100 px-5">
+                    <h3 class="text-light text-center mb-5 ">معانا تقدر تحجز وتقارن بين كثير من أفضل الدكاترة خلالنا
+                    </h3>
+                    <div class="text-center">
+                        <a href="" class="rectangle-link mx-3">
+                            <img src="./images/google-footer.png" alt="">
+                        </a>
+                        <a href="" class="rectangle-link mx-3">
+                            <img src="./images/twitter-footer.png" alt="">
+                        </a>
+                        <a href="" class="rectangle-link mx-3">
+                            <img src="./images/facebook-footer.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="/js/rating.js"></script>
+
+</body>
+
+</html>

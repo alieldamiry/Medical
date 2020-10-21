@@ -5,6 +5,7 @@ body {
 .results {
   display: -ms-grid;
   display: grid;
+  grid-auto-rows: 1fr;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: 10px;

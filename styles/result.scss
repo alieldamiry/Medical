@@ -4,6 +4,7 @@ body {
 // Results
 .results {
     display: grid;
+    grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
 }
