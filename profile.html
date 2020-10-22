@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <!-- BootStrap English -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <!-- Bootstrap RTL -->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
+        integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/profile.css">
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+</head>
+
+<body style="background-color:#F5F6FA;">
+
+    <div class="top-circle-2">
+        <img class="img-fluid w-100" src="./images/top-circle-2.png" alt="eclipse">
+    </div>
+    <div class="nav-container nav-shadow">
+        <nav class="navbar justify-content-between">
+            <div style="width: 100px;">
+                <img class="img-fluid w-100" src="./images/logo.png" alt="">
+            </div>
+            <div class="d-flex mb-3">
+                <div class="d-flex mb-3">
+                    <a href="home.html" class="btn nav-item primary-text">الرئيسية</a>
+                    <a class="btn nav-item primary-text">إعرفنا</a>
+                    <a href="join.html" class="btn nav-item primary-text">دكتور؟ إنضم إلينا</a>
+                </div>
+            </div>
+            <div class="d-flex login-container">
+                <button class="btn language px-0"><img class="w-50" src="./images/egypt.png" alt=""></button>
+                <button class="btn login-btn-primary px-4 border-25">تسجيل الدخول</button>
+            </div>
+        </nav>
+    </div>
+    <main style="max-width: 1500px;">
+        <div class="main-grid">
+            <div class="info-grid">
+                <!-- <div style="width:270px; border-radius: 10px; box-shadow: 0px 0px 10px #00000033;"
+                    class="mx-auto my-3 bg-white">
+                    <a href="" style="border-radius: 10px 10px 0 0 ;">
+                        <h5 class="text-light text-center py-3">الصفحة الشخصية</h5>
+                    </a>
+                    <a class="" style="border-radius: 10px 10px 0 0 ;">
+                        <h5 class="text-light primary-text text-center py-3">مواعيدي</h5>
+                    </a>
+                </div> -->
+                <ul style="width:270px; border-radius: 10px; box-shadow: 0px 0px 10px #00000033;">
+                    <li><a class="side-link active side-link-1" href="">الصفحة الرئيسية</a></li>
+                    <li><a class="side-link side-link-2" href="">مواعيدي</a></li>
+                </ul>
+            </div>
+            <div class="doctor px-5" style="padding: 40px;">
+                <div class="profile-info text-center" style="display: grid; grid-template-columns:  1fr 1fr 1fr;">
+                    <p>الاسم</p>
+                    <p class="font-tajawal-medium " style="font-weight:300">محمد محمود محمد</p>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn d-flex p-0" data-toggle="modal" data-target="#editNameModal">
+                            <p class="mx-1">تعديل</p>
+                            <img src="/images/edit.png" alt="">
+                        </button>
+                        <!-- Edit Name Modal -->
+                        <div class="modal fade" id="editNameModal" tabindex="-1" role="dialog"
+                            aria-labelledby="editNameModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="form-group mr-5 text-left">
+                                                <label class="primary-text" for="name">الإسم</label>
+                                                <input type="email" class="form-control text-input" id="name"
+                                                    aria-describedby="emailHelp">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">إلغاء</button>
+                                        <button type="submit" class="btn primary-bg text-light">حفظ</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-info text-center" style="display: grid; grid-template-columns:  1fr 1fr 1fr;">
+                    <p>الموبايل</p>
+                    <p class="font-tajawal-medium " style="font-weight:300">101010101010</p>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn d-flex p-0" data-toggle="modal" data-target="#editMobileModal">
+                            <p class="mx-1">تعديل</p>
+                            <img src="/images/edit.png" alt="">
+                        </button>
+                        <!-- Edit Mobile Modal -->
+                        <div class="modal fade" id="editMobileModal" tabindex="-1" role="dialog"
+                            aria-labelledby="editMobileModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="form-group mr-5 text-left">
+                                                <label class="primary-text" for="number">الموبايل</label>
+                                                <input type="number" class="form-control text-input" id="number"
+                                                    aria-describedby="emailHelp">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">إلغاء</button>
+                                        <button type="submit" class="btn primary-bg text-light">حفظ</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-info text-center" style="display: grid; grid-template-columns:  1fr 1fr 1fr;">
+                    <p>البريد الالكتروني</p>
+                    <p class="font-tajawal-medium " style="font-weight:300">doctor@mail.com</p>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn d-flex p-0" data-toggle="modal" data-target="#editEmailModal">
+                            <p class="mx-1">تعديل</p>
+                            <img src="/images/edit.png" alt="">
+                        </button>
+                        <!-- Edit Email Modal -->
+                        <div class="modal fade" id="editEmailModal" tabindex="-1" role="dialog"
+                            aria-labelledby="editEmailModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="form-group mr-5 text-left">
+                                                <label class="primary-text" for="email">البريد الالكتروني</label>
+                                                <input type="email" class="form-control text-input" id="email"
+                                                    aria-describedby="emailHelp">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">إلغاء</button>
+                                        <button type="submit" class="btn primary-bg text-light">حفظ</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-info text-center" style="display: grid; grid-template-columns:  1fr 1fr 1fr;">
+                    <p>كلمة المرور</p>
+                    <p class="font-tajawal-medium" style="font-weight:300">**************</p>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn d-flex p-0" data-toggle="modal" data-target="#editPasswordModal">
+                            <p class="mx-1">تعديل</p>
+                            <img src="/images/edit.png" alt="">
+                        </button>
+                        <!-- Edit Password Modal -->
+                        <div class="modal fade" id="editPasswordModal" tabindex="-1" role="dialog"
+                            aria-labelledby="PasswordModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="form-group mr-5 text-left">
+                                                <label class="primary-text" for="password">كلمة المرور</label>
+                                                <input type="password" class="form-control text-input" id="password"
+                                                    aria-describedby="passwordHelp">
+                                            </div>
+                                            <div class="form-group mr-5 text-left">
+                                                <label class="primary-text" for="password">أعد كتابة كلمة المرور</label>
+                                                <input type="password" class="form-control text-input" id="password"
+                                                    aria-describedby="passwordHelp">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">إلغاء</button>
+                                        <button type="submit" class="btn primary-bg text-light">حفظ</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="primary-bg py-5">
+        <div class="row">
+            <div class="col-lg-3 my-auto">
+                <div class="logo-circle rounded-circle mb-4 mx-auto">
+                    <img class="w-100" src="./images/logo.png" alt="logo">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <h3 class="text-light mb-4">روابط الموقع</h3>
+                <div class="d-flex flex-column text-grey">
+                    <a class="footer-link mb-4" href="">التخصصات</a>
+                    <a class="footer-link mb-4" href="">سياسة الإستخدام</a>
+                    <a class="footer-link mb-4" href="">اسم الدكتور</a>
+                    <a class="footer-link mb-4" href="">إنضم إلينا</a>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <h3 class="text-light mb-4">روابط الموقع</h3>
+                <div class="d-flex flex-column text-grey">
+                    <a class="footer-link mb-4" href="">التخصصات</a>
+                    <a class="footer-link mb-4" href="">سياسة الإستخدام</a>
+                    <a class="footer-link mb-4" href="">اسم الدكتور</a>
+                    <a class="footer-link mb-4" href="">إنضم إلينا</a>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="d-flex flex-column align-items-center justify-content-center h-100 px-5">
+                    <h3 class="text-light text-center mb-5 ">معانا تقدر تحجز وتقارن بين كثير من أفضل الدكاترة خلالنا
+                    </h3>
+                    <div class="text-center">
+                        <a href="" class="rectangle-link mx-3">
+                            <img src="./images/google-footer.png" alt="">
+                        </a>
+                        <a href="" class="rectangle-link mx-3">
+                            <img src="./images/twitter-footer.png" alt="">
+                        </a>
+                        <a href="" class="rectangle-link mx-3">
+                            <img src="./images/facebook-footer.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

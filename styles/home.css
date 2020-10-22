@@ -5,6 +5,24 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: tajawal-bold;
+  src: url("../fonts/Tajawal-Bold.ttf");
+}
+
+.font-tajawal-bold {
+  font-family: tajawal-bold;
+}
+
+@font-face {
+  font-family: tajawal-medium;
+  src: url("../fonts/Tajawal-Medium.ttf");
+}
+
+.font-tajawal-medium {
+  font-family: tajawal-medium;
+}
+
 a {
   text-decoration: none !important;
   color: unset;
@@ -26,24 +44,6 @@ body {
 .row {
   margin-left: 0;
   margin-right: 0;
-}
-
-@font-face {
-  font-family: tajawal-bold;
-  src: url("../fonts/Tajawal-Bold.ttf");
-}
-
-.font-tajawal-bold {
-  font-family: tajawal-bold;
-}
-
-@font-face {
-  font-family: tajawal-medium;
-  src: url("../fonts/Tajawal-Medium.ttf");
-}
-
-.font-tajawal-medium {
-  font-family: tajawal-medium;
 }
 
 .faded {

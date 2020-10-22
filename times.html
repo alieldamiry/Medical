@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rate doctor</title>
+    <title>times</title>
     <!-- BootStrap English -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
         integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/doctor.css">
-    <link rel="stylesheet" href="./styles/rating.css">
+    <link rel="stylesheet" href="./styles/profile.css">
     <!-- Font Awesome -->
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 </head>
 
 <body style="background-color:#F5F6FA;">
+
     <div class="top-circle-2">
         <img class="img-fluid w-100" src="./images/top-circle-2.png" alt="eclipse">
     </div>
@@ -43,88 +43,48 @@
     <main style="max-width: 1500px;">
         <div class="main-grid">
             <div class="info-grid">
-                <div style="width:270px; border-radius: 10px; box-shadow: 0px 0px 10px #00000033;"
-                    class="mx-auto py-3 my-3 bg-white">
-                    <div class="d-flex align-items-center mb-5">
-                        <div class="mx-2" style="width: 25px;">
-                            <img class="w-100 img-fluid" src="./images/Icon material-event-available.png" alt="">
-                        </div>
-                        <div>
-                            <p class="mb-0">متاح من السبت للخميس</p>
-                            <p class="faded mb-0">من 5 مساء إلى 10 مساء</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-5">
-                        <div class="mx-2" style="width: 30px;">
-                            <img class="w-100 img-fluid" src="./images/Icon feather-clock.png" alt="">
-                        </div>
-                        <div class="faded">
-                            <p class="mb-0">مدة الانتظار 10 دقيقة</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-5">
-                        <div class="mx-2" style="width: 30px;">
-                            <img class="w-100 img-fluid" src="./images/icon-money.png" alt="">
-                        </div>
-                        <div>
-                            <p class="mb-0">سعر الكشف - <span class="faded">200 جنيه</span></p>
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <a href="booking.html" class="btn primary-bg text-light px-5">إحجز</a>
-                    </div>
-                </div>
+                <!-- <div style="width:270px; border-radius: 10px; box-shadow: 0px 0px 10px #00000033;"
+                    class="mx-auto my-3 bg-white">
+                    <a href="" style="border-radius: 10px 10px 0 0 ;">
+                        <h5 class="text-light text-center py-3">الصفحة الشخصية</h5>
+                    </a>
+                    <a class="" style="border-radius: 10px 10px 0 0 ;">
+                        <h5 class="text-light primary-text text-center py-3">مواعيدي</h5>
+                    </a>
+                </div> -->
+                <ul style="border-radius: 10px; box-shadow: 0px 0px 10px #00000033;">
+                    <li><a class="side-link side-link-1" href="">الصفحة الرئيسية</a></li>
+                    <li><a class="side-link active side-link-2" href="">مواعيدي</a></li>
+                </ul>
             </div>
-            <div class="doctors">
-                <div class="doctor bg-white">
-                    <div class="pic">
-                        <div style="width: 150px;" class="d-flex justify-content-center mx-auto">
-                            <img class="w-100" src="./images/doctor-result.png" alt="">
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h2 class="primary-text mb-5">د.جمال الدين محمد فتحي</h2>
-                        <div class="d-flex">
-                            <div class="mr-2">
-                                <img src="./images/icon-det.png" alt="">
+            <div class="doctor px-5 w-100" style="padding: 40px;">
+                <div class="d-flex justify-content-between mb-5">
+                    <button class="btn primary-bg border py-2 text-light" style="border-radius: 20px">المواعيد القادمة</button>
+                    <button class="btn bg-secondary border py-2 text-light" style="border-radius: 20px">المواعيد السابقة</button>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-12 col-md-4">
+                        <div style="box-shadow: 0px 0px 6px #00000029; border-radius: 10px; padding: 10px 20px;">
+                            <div class="mb-5" style="width: 100px; margin: auto;">
+                                <img class="w-100" src="/images/doctor-result.png" alt="">
                             </div>
-                            <p> فع الوجه, تقشير الوجه, علاج تجاعيد الوجه, تجميل
-                                الوجه, حقن الفيلر, عملية شد الجبهة, فراكشنال ليزر, علاج النمش ازالة الشعر بالليزر للجسم
-                                بالكامل, تقشير البشرة بماسك الذهب, علاج تساقط الشعر, علاج سقوط الشعر للسيدات</p>
-                        </div>
-                        <div class="d-flex mb-5">
-                            <div class="mr-2">
-                                <img src="./images/icon-location.png" alt="">
+                            <h5 class="primary-text">د.جمال الدين محمد فتحي</h5>
+                            <div class="font-tajawal-medium">
+                                <p>استشاري المناعة والحساسية</p>
+                                <p>مصر الجديدة 12 شارع </p>
+                                <p>سعر الكشف: 200 جنيه</p>
                             </div>
-                            <p>مصر الجديدة 12 شارع بطرس غالي الدور الرابع روكسي</p>
                         </div>
-                        <div class="d-flex mb-3">
-                            <div class="mr-2">
-                                <img src="./images/Icon-phone.png" alt="">
+                        <div class="font-tajawal-medium " style="box-shadow: 0px 0px 6px #00000029; border-radius: 10px; padding: 10px 20px;">
+                            <p>اليوم الساعة 12 صباحًا</p>
+                            <div class="text-right">
+                                <a class="btn">
+                                    <small class="text-danger">
+                                        الغاء الموعد
+                                    </small>
+                                </a>
                             </div>
-                            <p>01142400557 / 016446521</p>
                         </div>
-                    </div>
-                    <div class="rating">
-                        <div class="mb-1">
-                            <img class="d-block mx-auto" src="./images/rating-star.png" alt="">
-                        </div>
-                        <p class="text-center">4.5</p>
-                    </div>
-                    <div class="patients-rating mt-4">
-                        <form action="" style="padding: 0 15%;">
-                            <div class="d-md-flex justify-content-between align-items-center">
-                                <h6 class="primary-text">أضف تقييمك</h6>
-                                <div class="star-rating"><s><s><s><s><s></s></s></s></s></s></div>
-                                <!-- <div class="dummy-div"></div>
-                                <div class="dummy-div"></div> -->
-                                <input class="invisible w-0" id="rating-value" type="number">
-                            </div>
-                            <textarea class="rating-text w-100 h-auto" placeholder="اكتب تقييمك" name="" id="" cols="30" rows="6"></textarea>
-                            <div class="text-center">
-                                <button class="btn text-light primary-bg">أضف التقييم</button>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -181,7 +141,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <script src="/js/rating.js"></script>
 
 </body>
 

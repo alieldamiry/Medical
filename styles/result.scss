@@ -7,6 +7,7 @@ body {
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+    height: 100%;
 }
 @media (max-width: 1400px) {
     .results {
@@ -20,6 +21,7 @@ body {
     padding: 10px;
     grid-gap: 10px;
     border-radius: 10px;
+    height: 100%;
 }
 
 @media (min-width: 994px) {

@@ -5,28 +5,13 @@
 
 .doctor {
     box-shadow: 0px 0px 6px #00000029;
+    background-color: #ffff;
     border-radius: 10px;
-    display: grid;
-    grid-gap: 10px;
-    margin: 10px;
-    padding: 20px 5px;
-    grid-template-areas:
-        "pic content"
-        "rating content"
-        "rating content"
-        "rating content"
-        "patientRating patientRating";
+    margin: 0 10px;
+    padding: 20px 10px;
 }
 
 @media (max-width: 855px) {
-    .doctor {
-        grid-template-areas:
-            "pic pic"
-            "rating rating"
-            "content content"
-            "content content"
-            "patientRating patientRating";
-    }
     .main-grid {
         flex-flow: column;
     }
@@ -52,7 +37,6 @@
     }
 }
 
-// profile page
 .side-link {
     display: block;
     text-align: center;
@@ -63,7 +47,11 @@
         color: #fff;
     }
 
-    padding: 10px 20px;
+    padding: 10px 70px;
+}
+.side-link.active {
+    background-color: #3f72af;
+    color: #fff;
 }
 
 .side-link-1 {
@@ -71,4 +59,15 @@
 }
 .side-link-2 {
     border-radius: 0 0 10px 10px;
+}
+
+.text-input {
+    width: 424px;
+    background: #ebebeb 0% 0% no-repeat padding-box;
+    border: none;
+    &:focus {
+        background-color: #ebebeb;
+        outline: 0;
+        box-shadow: none;
+    }
 }
